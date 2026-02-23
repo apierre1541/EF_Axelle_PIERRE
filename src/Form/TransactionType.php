@@ -18,16 +18,16 @@ class TransactionType extends AbstractType
         $builder
             ->add('paymentMethod', EntityType::class, [
                 'class' => PaymentMethod::class,
-                'choice_label' => 'id',
+                'choice_label' => 'libelle',
             ])
             ->add('category', EntityType::class, [
                 'class' => Category::class,
-                'choice_label' => 'id',
+                'choice_label' => 'libelle',
                 'multiple' => true,
             ])
             ->add('utilisateur', EntityType::class, [
                 'class' => User::class,
-                'choice_label' => 'id',
+                'choice_label' => 'username',
             ])
         ;
     }
