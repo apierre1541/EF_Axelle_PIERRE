@@ -17,7 +17,7 @@ class CategoryType extends AbstractType
             ->add('libelle')
             ->add('utilisateur', EntityType::class, [
                 'class' => User::class,
-                'choice_label' => 'libelle',
+                'choice_label' => 'username',
             ])
         ;
     }
